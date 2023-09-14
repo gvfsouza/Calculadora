@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <Button
+            android:text="botaoSoma"
+            android:layout_width="144dp"
+            android:layout_height="43dp" android:id="@+id/botaoSoma"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/valor2"
+            android:layout_marginEnd="4dp" app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+            android:text="botaoMulti"
+            android:layout_width="143dp"
+            android:layout_height="43dp" android:id="@+id/botaoMulti"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/valor2" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="12dp"/>
+    <Button
+            android:text="botaoSub"
+            android:layout_width="147dp"
+            android:layout_height="46dp" android:id="@+id/botaoSub"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/botaoSoma" android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+            android:text="botaoDiv"
+            android:layout_width="141dp"
+            android:layout_height="48dp" android:id="@+id/botaoDiv"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/botaoMulti" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"/>
+    <TextView
+            android:layout_width="144dp"
+            android:textSize="25dp"
+            android:layout_height="36dp" android:id="@+id/textView"
+            android:text="Calculadora"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="52dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="88dp"/>
+    <EditText
+            android:layout_width="276dp"
+            android:layout_height="43dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/valor1"
+            android:layout_marginTop="49dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="24dp"/>
+    <EditText
+            android:layout_width="275dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/valor2"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/valor1" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="24dp"
+    />
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/valorSaida"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="54dp"
+            android:layout_marginTop="29dp" app:layout_constraintTop_toBottomOf="@+id/botaoSub"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
