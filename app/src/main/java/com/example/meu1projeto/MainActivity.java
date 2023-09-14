@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     TextView valorSaida;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState){
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -39,12 +39,44 @@ public class MainActivity extends AppCompatActivity {
                 int resultado = num1 + num2;
                 valorSaida.setText("resultado: " + resultado);
 
+            }
+        });
+
+        botaoSub.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                int num1 = Integer.parseInt(valor1.getText().toString());
+                int num2 = Integer.parseInt(valor2.getText().toString());
+                int resultado = num1 - num2;
+                valorSaida.setText("resultado: " + resultado);
 
             }
         });
 
+        botaoMulti.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                int num1 = Integer.parseInt(valor1.getText().toString());
+                int num2 = Integer.parseInt(valor2.getText().toString());
+                int resultado = num1 * num2;
+                valorSaida.setText("resultado: " + resultado);
 
+            }
+        });
+
+        botaoDiv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                int num1 = Integer.parseInt(valor1.getText().toString());
+                int num2 = Integer.parseInt(valor2.getText().toString());
+                int resultado = num1 / num2;
+                valorSaida.setText("resultado: " + resultado);
+
+            }
+        });
 
     }
 }
